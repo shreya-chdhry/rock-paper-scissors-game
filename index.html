@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="4kV7FvuD1hI_8n4hFzHMmZMYc_TlV-8PqPp9dpL3y5U" />
+    <link rel="stylesheet" href="style.css">
+    <title>Stone Paper Scissors</title>
+</head>
+<body>
+    <div class="game-box">
+        <div class="game-heading">
+            <h1>
+                Stone Paper Scissors
+            </h1>
+        </div>
+        <div class="game-input">
+            <button class="input-button" onclick="
+                playGame('stone');
+                ">
+                <img src="images/stone.png" alt="Stone" class="stone-image">
+            </button>
+            <button class="input-button" onclick="
+                playGame('paper');
+                ">
+                <img src="images/paper.png" alt="Paper" class="paper-image">
+            </button>
+            <button class="input-button" onclick="
+                playGame('scissors');
+                ">
+                <img src="images/scissors.png" alt="Scissors" class="scissors-image">
+            </button>
+        </div>
+        <div class="game-result">
+
+        </div>
+        <div class="game-score">
+
+        </div>
+        <div class="reset-button">
+            <button class="css-reset-button" onclick="
+                resetScore();
+                ">
+                Reset Score
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

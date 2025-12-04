@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: "Brush Script MT", cursive;
+    font-size: 300%;
+}
+body{
+    background-color: #F29AAE;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 1.5px #ffffff;
+}
+.input-button{
+    border: none;
+    border-radius: 50%;
+    background-color: #C47BE4;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #C47BE4;
+}
+img{
+    height: 50px;
+    padding: 20px;
+    background-color: transparent;
+}
+.game-box{
+    margin-top: 50px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 7.5px solid #ffffff;
+    border-radius: 40px;
+    background-color: #7132CA;
+    box-shadow: 1px 1px 10px #ffffff;
+}
+.game-result{
+    text-align: center;
+}
+.css-reset-button{
+    border: none;
+    font-size: large;
+    background-color: #F29AAE;
+    color: #7132CA;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #F29AAE;
+    text-shadow: 0px 0px 5px #7132CA;
+}
+.move-image{
+    height: 30px;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: transparent;
+}
