@@ -33,7 +33,7 @@ img{
 .game-box{
     margin-top: 50px;
     height: 500px;
-    width: 500px;
+    width: 475px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@ img{
 .game-result{
     text-align: center;
 }
-.css-reset-button{
+.css-reset-button, .yes-button, .no-button{
     border: none;
     font-size: large;
     background-color: #F29AAE;
@@ -63,4 +63,9 @@ img{
     padding: 10px;
     padding-bottom: 0px;
     background-color: transparent;
+}
+.reset-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

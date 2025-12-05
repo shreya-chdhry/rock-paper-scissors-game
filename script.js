@@ -8,7 +8,7 @@ document.body.addEventListener('keydown',(event)=>{
     else if (event.key=='s' || event.key=='S'){
         playGame('scissors');
     }
-});
+});  //game works with r/p/s/R/P/S keys too
 const score=JSON.parse(localStorage.getItem('save-score')) || {
     win:0,
     lose:0,
@@ -84,3 +84,17 @@ function resetScore(){
     document.querySelector('.game-score').innerHTML=`<p> Win: ${score.win} Lose: ${score.lose} Tie: ${score.tie} </p>`;
     localStorage.setItem('save-score',JSON.stringify(score));
 }
+document.body.addEventListener('keydown',(event)=>{
+    if (event.key=='Backspace'){
+        document.querySelector('.reset-confirmation-msg').innerHTML='Do you want to reset the score Y/N? <button class="yes-button" >Yes</button> <button class="no-button" >No</button>';
+        document.body.addEventListener('keydown',(event)=>{
+            if (event.key=='Y' || event.key=='y' || event.key=='Enter'){
+                resetScore();
+                document.querySelector('.reset-confirmation-msg').innerHTML='';
+            }
+            else if (event.key=='N' || event.key=='n'){
+                document.querySelector('.reset-confirmation-msg').innerHTML='';
+            }
+        })
+    }
+}); //Backspace to reset score and displays a confirmation msg when asked to reset
