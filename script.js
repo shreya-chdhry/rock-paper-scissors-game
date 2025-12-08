@@ -32,10 +32,10 @@ function playGame(playerMove){
 
     if (playerMove=='rock'){
         if (computerMove=='paper'){
-            result='You lose';
+            result='You lost';
         }
         else if (computerMove=='scissors'){
-            result='You win';
+            result='You won';
         }
         else{
             result='Tie';
@@ -46,27 +46,27 @@ function playGame(playerMove){
             result='Tie';
         }
         else if (computerMove=='scissors'){
-            result='You lose';
+            result='You lost';
         }
         else{
-            result='You win';
+            result='You won';
         }
     }
     else{
         if (computerMove=='paper'){
-            result='You win';
+            result='You won';
         }
         else if (computerMove=='scissors'){
             result='Tie';
         }
         else{
-            result='You lose';
+            result='You lost';
         }
     }
-    if (result=='You win'){
+    if (result=='You won'){
         score.win++;
     }
-    else if (result=='You lose'){
+    else if (result=='You lost'){
         score.lose++;
     }
     else if (result=='Tie'){

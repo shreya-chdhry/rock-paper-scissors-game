@@ -5,7 +5,8 @@
 }
 h1{
     font-family: "Brush Script MT", cursive;
-    font-size: 300%;
+    font-size: 350%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 body{
     background-color: #F29AAE;
@@ -15,6 +16,7 @@ body{
     align-items: center;
     justify-content: center;
     text-shadow: 0px 0px 1.5px #ffffff;
+    min-height: 100vh;
 }
 .input-button{
     border: none;
@@ -24,14 +26,22 @@ body{
     margin-left: 10px;
     cursor: pointer;
     box-shadow: 0px 0px 5px #C47BE4;
+    box-shadow: 0 5px 15px rgba(113, 50, 202, 0.4); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.input-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px #C47BE4;
+}
+.input-button:active {
+    transform: scale(0.95); 
 }
 img{
-    height: 50px;
+    height: 60px;
     padding: 20px;
     background-color: transparent;
 }
 .game-box{
-    margin-top: 50px;
     height: 500px;
     width: 475px;
     display: flex;
@@ -41,7 +51,7 @@ img{
     border: 7.5px solid #ffffff;
     border-radius: 40px;
     background-color: #7132CA;
-    box-shadow: 1px 1px 10px #ffffff;
+    box-shadow: 5px 5px 20px #ffffff;
 }
 .game-result{
     text-align: center;
@@ -55,8 +65,16 @@ img{
     border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0px 0px 5px #F29AAE;
     text-shadow: 0px 0px 5px #7132CA;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.css-reset-button:hover, .yes-button:hover, .no-button:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 25px  #F29AAE; 
+}
+.css-reset-button:active, .yes-button:active, .no-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px  #F29AAE; 
 }
 .move-image{
     height: 30px;
